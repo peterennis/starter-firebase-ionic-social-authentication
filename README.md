@@ -1,0 +1,1 @@
+# starter-firebase-ionic-social-authentication
