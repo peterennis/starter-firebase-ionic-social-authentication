@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="this.afAuth.auth.signOut()">
+        <ion-icon name="power"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngFor="let item of items | async">
+    <h1>{{ item.itemid}}</h1>
+    <p>{{ item.description}}</p>
+  </div>
+
+  <button ion-button (click)="addItem()">ADD NEW ITEM</button>
+</ion-content>
